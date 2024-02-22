@@ -1,6 +1,8 @@
 #ifndef TREE_H
 #define TREE_H
 
+#include <stdio.h>
+
 typedef struct tnode {
     int val;
     struct tnode* left;

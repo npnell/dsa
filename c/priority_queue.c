@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "heap.h"
+#include "priority_queue.h"
 
 int main(int argc, char* argv[])
 {
