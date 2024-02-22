@@ -35,6 +35,4 @@ int main(int argc, char* argv[])
     printf("%d ", hash_search(&ht, 5));
     printf("%d ", hash_search(&ht, 6));
     printf("%d ", hash_search(&ht, 7));
-
-
 }
