@@ -53,14 +53,4 @@ void build_max_heap(heap *h)
     }
 }
 
-void heap_sort(heap *h)
-{
-    build_max_heap(h);
-    for(int i = MAX_HEAP_LENGTH - 1; i >= 1; --i) {
-        swap(h->e, i, 0);
-        h->size = h->size - 1;
-        max_heapify(h, 0);
-    }
-}
-
 #endif

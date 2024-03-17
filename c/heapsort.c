@@ -3,6 +3,16 @@
 
 #include "heap.h"
 
+void heap_sort(heap *h)
+{
+    build_max_heap(h);
+    for(int i = MAX_HEAP_LENGTH - 1; i >= 1; --i) {
+        swap(h->e, i, 0);
+        h->size = h->size - 1;
+        max_heapify(h, 0);
+    }
+}
+
 int main(int argc, char* argv[])
 {
     heap h = { .e = {4, 1, 3, 2, 16, 9, 10, 14, 8, 7}, .size = 10 };
